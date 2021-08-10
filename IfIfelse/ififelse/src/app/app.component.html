@@ -1,0 +1,15 @@
+<h1 *ngIf="show2=='yes' else elseBlock">
+  If Block
+</h1>
+<ng-template #elseBlock>
+  <h1>Else Block</h1>
+</ng-template>
+<ng-template [ngIf]="show3=='red'">
+  <h1>Red Block</h1>
+</ng-template>
+<ng-template [ngIf]="show3=='green'">
+  <h1>Green Block</h1>
+</ng-template>
+<ng-template [ngIf]="show3=='blue'">
+  <h1>Blue Block</h1>
+</ng-template>

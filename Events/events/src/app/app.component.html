@@ -1,0 +1,14 @@
+<button (click)="myEvent('onClick')">click</button>
+<br><br>
+<input type="text" #box (keyup)="myEvent(box.value)">
+<br><br>
+<input type="text" #box (keyup.space)="myEvent(box.value)">
+<br><br>
+<input type="text" #box (keyup.enter)="myEvent(box.value)">
+<!-- blur gets fired when it leas the focus -->
+<br><br>
+<input type="text" #box (blur)="myEvent(box.value)">
+<br><br>
+<input type="text" #box (mouseover)="myEvent(box.value)">
+<br><br>
+<input type="text" #box (mouseleave)="myEvent(box.value)">

@@ -1,0 +1,9 @@
+<!-- chanign color with normal css -->
+<h3 style="color: red;">Red</h3>
+<!-- chanign color  -->
+<h3 [style.color]="'green'">Green</h3>
+<!--  Dynaimically -->
+<h3 [style.color]="color">blue</h3>
+<button (click)="updateColor()">change it</button>
+<!-- chanign color with conditions -->
+<h3 [style.color]="err?'red':'green'">color with conditions</h3>
