@@ -1,0 +1,15 @@
+<p>table works!</p>
+<table border="1">
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Salary</td>
+        <td>Age</td>
+    </tr>
+    <tr *ngFor="let data of employee">
+        <td>{{data.id}}</td>
+        <td>{{data.employee_name}}</td>
+        <td>{{data.employee_salary}}</td>
+        <td>{{data.employee_age}}</td>
+    </tr>
+</table>
