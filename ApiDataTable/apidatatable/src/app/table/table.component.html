@@ -2,14 +2,20 @@
 <table border="1">
     <tr>
         <td>Id</td>
-        <td>Name</td>
-        <td>Salary</td>
-        <td>Age</td>
+        <td>Email</td>
+        <td>First Name</td>        
+        <td>Last Name</td>       
+        <td>Avatar</td>       
+        <!-- <td>Age</td> -->
     </tr>
-    <tr *ngFor="let data of employee">
-        <td>{{data.id}}</td>
-        <td>{{data.employee_name}}</td>
-        <td>{{data.employee_salary}}</td>
-        <td>{{data.employee_age}}</td>
+    <tr *ngFor="let item of employee">
+       
+
+        <td>{{item.id}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.first_name}}</td>
+        <td>{{item.last_name}}</td>
+        <td>{{item.avatar}}</td>        
+        
     </tr>
 </table>
