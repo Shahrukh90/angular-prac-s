@@ -1,21 +1,17 @@
 <p>table works!</p>
-<table border="1">
-    <tr>
+<table mat-table border=1 class="mat-elevation-z8">
+    <tr >
         <td>Id</td>
+        <td>First Name</td>
+        <td>Last Name</td>
         <td>Email</td>
-        <td>First Name</td>        
-        <td>Last Name</td>       
-        <td>Avatar</td>       
-        <!-- <td>Age</td> -->
+        <td>Avatar</td>
     </tr>
-    <tr *ngFor="let item of employee">
-       
-
+    <tr  *ngFor="let item of employee">
         <td>{{item.id}}</td>
-        <td>{{item.email}}</td>
         <td>{{item.first_name}}</td>
         <td>{{item.last_name}}</td>
-        <td>{{item.avatar}}</td>        
-        
+        <td>{{item.email}}</td>
+        <td>{{item.avatar}}</td>
     </tr>
 </table>

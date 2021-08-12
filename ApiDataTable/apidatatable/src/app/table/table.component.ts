@@ -7,15 +7,14 @@ import { DummydataService } from '../dummydata.service';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent implements OnInit {
-  employee:any=[];
+//injecting the dummy data services inside 
   constructor(private dummy:DummydataService) { }
+  employee:any=[];
+  ngOnInit(): void {
+    this.dummy.getData().subscribe(data=>{console.log(data.data);
+    this.employee=data.data;       
+    });
 
-  ngOnInit(): void {    
-      this.dummy.getData().subscribe(data=>{ console.warn(data);            
-        console.log(data);
-        console.log(Object.values(data));
-      return this.employee=Object.values(data);      
-    });   
   }
 
 }
