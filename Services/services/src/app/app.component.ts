@@ -11,12 +11,12 @@ export class AppComponent {
   name="";
   id=0;
   age=0;
+
   constructor(private user:UsersdataService){
     console.log(this.user.getData())
     let data=this.user.getData();
     this.name=data.name;
     this.id=data.id;
     this.age=data.age;
-
   }
 }
