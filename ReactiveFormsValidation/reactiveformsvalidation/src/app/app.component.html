@@ -1,0 +1,17 @@
+<div class="col-sm-6">
+  <form [formGroup]="loginform" (ngSubmit)="getData()">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" required class="form-control" formControlName="email" name="email" aria-describedby="emailHelp" placeholder="Enter email"         >
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>        
+        <span class="error" *ngIf="email.invalid && email.touched">Email Cant be empty</span>
+      </div>
+      
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" formControlName="password" name="password" placeholder="Password" >
+        <span class="error" *ngIf="password.invalid && password.touched">Password Cant be empty</span>
+      </div>       
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

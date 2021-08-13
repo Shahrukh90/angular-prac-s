@@ -1,0 +1,5 @@
+<form [formGroup]="login" (ngSubmit)="getData()">
+  <input type="email" formControlName="email" name="email" ><br><br>
+  <input type="password" formControlName="password" name="password"><br><br>
+  <button type="submit">Login</button>
+</form>
