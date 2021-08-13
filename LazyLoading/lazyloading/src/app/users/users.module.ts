@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { UserRoutingModule } from './user-routing.module';
+import { UsersRoutingModule } from './users-routing.module';
 import { LoginComponent } from './login/login.component';
 import { ListComponent } from './list/list.component';
-
+console.warn('user module loaded');
 
 @NgModule({
   declarations: [
@@ -13,7 +13,7 @@ import { ListComponent } from './list/list.component';
   ],
   imports: [
     CommonModule,
-    UserRoutingModule
+    UsersRoutingModule
   ]
 })
-export class UserModule { }
+export class UsersModule { }
